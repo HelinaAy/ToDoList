@@ -1,0 +1,17 @@
+#body{
+    background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+#card{
+    translate:all 0.5s ease;
+}
+#card:hover{
+    transform: translateY(-5px);
+}
+button{
+    transition: .3s;
+}
+button:hover{
+    transform: scale(1.08);
+}
