@@ -3,6 +3,19 @@ let add = document.getElementById("add");
 let task = document.getElementById("task");
 let date = document.getElementById("date")
 let today = new Date();
+let app= document.getElementById('app')
+let form = document.getElementById('welform');
+let welcomePage = document.getElementById('welcome');
+let hello = document.getElementById('hello');
+let submit = document.getElementById('submit');
+let f = document.getElementById('f');
+app.classList.add("blur");
+submit.addEventListener('click', function(e){
+    e.preventDefault();
+    welcomePage.style.display="none";
+    app.classList.remove("blur");
+    hello.textContent = `Hello, ${f.value}  🌸`
+})
 date.textContent=today.toDateString();
 add.addEventListener('click', function(e){
     let tasks = inputTask.value.trim();

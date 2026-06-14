@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 #card{
-    translate:all 0.5s ease;
+    translate:all .5s ease;
 }
 #card:hover{
     transform: translateY(-5px);
@@ -14,4 +14,30 @@ button{
 }
 button:hover{
     transform: scale(1.08);
+}
+#app.blur{
+    filter: blur(8px);
+    pointer-events: none;
+}
+#welcome{
+    position: fixed;
+    z-index: 1000;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    padding : 200px;
+
+
+
+}
+#welform{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 350px;
+    margin: 30px;
+    text-align: center;
+    box-shadow: 0 10px 20px black;
 }
